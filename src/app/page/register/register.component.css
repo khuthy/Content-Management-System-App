@@ -4,8 +4,8 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
-}
-.login {
+  }
+  .login {
     position: absolute;
     left: 20rem;
     right: 20rem;
@@ -17,9 +17,9 @@
     border-radius: 10px;
     box-shadow: 0 5px 10px #dddddd;
     background: #fff;
-}
-.login::before {
-    content: 'Sign In Form';
+  }
+  .login::before {
+    content: 'Sign Up Form';
     position: absolute;
     top: -2em;
     width: 100%;
@@ -27,12 +27,12 @@
     text-align: center;
     white-space: nowrap;
     font-size: 20px;
-
-
-
-
-}
-.login::after {
+  
+  
+  
+  
+  }
+  .login::after {
     content: '';
     position: absolute;
     bottom: -2em;
@@ -41,9 +41,9 @@
     text-align: center;
     white-space: nowrap;
     font-size: 13px;
-}
-
-.left {
+  }
+  
+  .left {
     flex: 1;
     background: linear-gradient(rgba(207, 160, 4, 0.411), rgba(170, 92, 4, 0.705)), url('../../../assets/images/ameer-basheer-s03YaiW2Q9U-unsplash.jpg');
     background-position: center center;
@@ -55,31 +55,66 @@
     color: #dddddd;
     text-shadow: 1px 1px solid #666;
     padding: 5%;
-}
-.logo {
-    margin-bottom: 20%;
-}
-.right {
+    order: 2;
+  }
+
+  .right {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.form {
+    order: 1;
+  }
+  .form {
     width: 50%;
-}
-input {
+  }
+  input {
   
     
-}
-input[type] {
+  }
+  input[type] {
     background: #ebebeb;
     padding: 10px;
     padding-left: 35px; 
     width: 100%;
     border: none;
     position: relative;
+  }
+  /* .far {
+    position: absolute;
+    top: 35.5%;
+    padding: 3px;
+    z-index: 1;
+    
+  } */
+ /*  .material-icons {
+    position: absolute;
+    top: 46.5%;
+    padding: 3px;
+    z-index: 1; 
+  } */
+  .form-group {
+    margin-bottom: 2rem;
+    text-align: center;
+  
+  }
+  .btn {
+    border: none;
+    padding: 10px;
+    background: forestgreen;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+    width: 60%;
+  }
+  .btn::before, .btn::after {
+    content: '';
+    
+  }
+
+  .logo {
+    margin-bottom: 20%;
 }
 .far {
     position: absolute;
@@ -94,25 +129,3 @@ input[type] {
     padding: 3px;
     z-index: 1; 
 }
-.form-group {
-    margin-bottom: 2rem;
-    text-align: center;
-
-}
-.btn {
-    border: none;
-    padding: 10px;
-    background: forestgreen;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: 400;
-    width: 60%;
-}
-.btn::before, .btn::after {
-    content: '';
-
-}
-
-
-
-

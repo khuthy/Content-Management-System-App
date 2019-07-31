@@ -1,28 +1,25 @@
 
 <app-menu></app-menu>
-<div class="container">
+<div id="main">
   
-  <div class="header">
-    <p>HOTEL</p>
-  </div>
-  <div class="rooms">
+  
     <div class="room" *ngFor="let hotel of details;">
-       <div class="card"><img src="{{hotel.image}}" alt="room1"></div>
-    <div class="details">
-      <h2>{{hotel.hotelName}}</h2>
-      <p>{{hotel.Description}}</p>
-    </div>
+       <div class="room-image"><img src="{{hotel.image}}" alt="room1">
+        <div class="details">
+                <h2>{{hotel.hotelName}}</h2>
+                <p>{{hotel.Description}}</p>
+              </div>
     </div>
     
-  </div>
-  <div class="FOOD">
+    </div>
+  
     <div class="room" *ngFor="let room of rooms;">
-        <div class="card"><img src="{{room.image}}" alt="room1"></div>
+        <div class="room-image"><img src="{{room.image}}" alt="room1"></div>
      <div class="details">
        <h2>{{room.Price}}</h2>
        <p>{{room.RoomType}}</p>
        <button [routerLink]="['roomdetails', room.key]">View Rooms</button>
      </div>
      </div>
-  </div>
+  
 </div>

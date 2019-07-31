@@ -7,8 +7,9 @@ import { LoginComponent } from './page/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { DetailsComponent } from './page/details/details.component';
 import { MenuComponent } from './page/menu/menu.component';
-import { ViewhotelsComponent } from './page/viewhotels/viewhotels.component';
+
 import { RoomdetailsComponent } from './page/roomdetails/roomdetails.component';
+import { RegisterComponent } from './page/register/register.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { RoomdetailsComponent } from './page/roomdetails/roomdetails.component';
     LoginComponent,
     DetailsComponent,
     MenuComponent,
-    ViewhotelsComponent,
-    RoomdetailsComponent
+ 
+    RoomdetailsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +30,8 @@ import { RoomdetailsComponent } from './page/roomdetails/roomdetails.component';
     
     RouterModule.forRoot([
       {path: '', component: LoginComponent},
-      {path: 'viewhotels', component: ViewhotelsComponent},
-      {path: 'details/:id', component: DetailsComponent},
+      {path: 'register', component: RegisterComponent},
+      {path: 'viewrooms', component: ViewroomsComponent},
       {path: 'roomdetails/:id', component: RoomdetailsComponent}
     ])
   ],

@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
         
       console.log('logged in');
         console.log(result);
-        this.router.navigateByUrl('/viewhotels')
+        this.router.navigateByUrl('/viewrooms');
         
         }).catch((error) => {
         // Handle Errors here.

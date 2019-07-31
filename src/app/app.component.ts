@@ -18,7 +18,7 @@ export class AppComponent {
 startAuth() {
   firebase.auth().onAuthStateChanged((user) => {
     if(user) {
-      this.router.navigateByUrl('/viewhotels');
+      this.router.navigateByUrl('/viewrooms');
     }else {
       this.router.navigateByUrl('/');
     }
