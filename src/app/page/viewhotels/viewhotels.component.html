@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+<div class="container">
+  
+  <div class="header">
+    <p>My rooms</p>
+  </div>
+  <div class="rooms">
+    <div class="room" *ngFor="let hotel of hotels;">
+       <div class="card"><img src="{{hotel.image}}" alt="room1"></div>
+    <div class="details">
+      <h2>{{hotel.hotelName}}</h2>
+      <p>R. {{hotel.Description}} p/m</p>
+    </div>
+    <button type="button" class="btn btn-info" [routerLink]="['/details', hotel.key]">View Rooms</button>
+    </div>
+   
+  </div>
+</div>

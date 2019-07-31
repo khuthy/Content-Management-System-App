@@ -1,0 +1,19 @@
+.container {
+    
+}
+.rooms {
+   display: flex;
+   flex-direction: row;
+   max-width: 80rem;
+   position: absolute;
+   top: 20rem;
+   right: 10rem;
+   left: 10rem; 
+     
+}
+.room {
+    max-height: 100px;
+    
+
+}
+

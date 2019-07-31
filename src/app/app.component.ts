@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import * as firebase from 'firebase';
+import { FIREBASE_CONFIG } from './firebase';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HotelAppAgular';
+  title = 'My Hotel Web App';
+  
+  constructor(private router: Router) {
+    firebase.initializeApp(FIREBASE_CONFIG);
+    this.startAuth();
+  }
+startAuth() {
+  firebase.auth().onAuthStateChanged((user) => {
+    if(user) {
+      this.router.navigateByUrl('/viewhotels');
+    }else {
+      this.router.navigateByUrl('/');
+    }
+  })
+}
 }

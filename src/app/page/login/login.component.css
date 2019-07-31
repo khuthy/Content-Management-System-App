@@ -1,0 +1,94 @@
+.container {
+    background: linear-gradient(-45deg, (#A81F21) 20%, (#fff) 20%);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.login {
+    position: absolute;
+    left: 20rem;
+    right: 20rem;
+    top: 10rem;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #dddddd;
+    background: #fff;
+}
+.login::before {
+    content: 'Sign In Form';
+    position: absolute;
+    top: -2em;
+    width: 100%;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 20px;
+
+
+
+
+}
+.login::after {
+    content: '';
+    position: absolute;
+    bottom: -2em;
+    width: 30px;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.left {
+    flex: 1;
+    background: linear-gradient(rgba(207, 160, 4, 0.411), rgba(170, 92, 4, 0.705)), url('../../../assets/images/ameer-basheer-s03YaiW2Q9U-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    width: 50%;
+}
+input {
+    background: #ebebeb;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    position: relative;
+
+}
+.fas {
+    position: relative;
+    top: 100%;
+}
+.form-group {
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+.btn {
+    border: none;
+    padding: 10px;
+    background: forestgreen;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+    width: 60%;
+}
+.btn::before, .btn::after {
+    content: '';
+}
+
+
+
+
