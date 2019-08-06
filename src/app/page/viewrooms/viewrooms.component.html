@@ -16,18 +16,56 @@
    
   </div>
 </div> -->
-<app-menu></app-menu>
+
 <nav class="navbar navbar-light" style="background: #fff; box-shadow: 0 5px 10px #dddddd">
     <a class="navbar-brand" href="#">Admin Dashboard</a>
+    
+    <!-- <a class="navbar-brand" href="#" data-target="#addRoomModal" data-toggle="modal">Add Rooms</a> -->
+    <a style="background: rgb(248, 45, 45); color: #fff; cursor: pointer; padding: .3em;" (click)="logout()">Logout</a>
   </nav>
 <div id="main">
-   
-      <div class="room" *ngFor="let room of rooms;">
-          <div class="card"><img src="{{room.image}}" alt="room1"></div>
-       <div class="details">
-         <h2>{{room.RoomType}}</h2>
-         <p>R. {{room.Price}} p/m</p>
-       </div>
-       <button type="button" class="btn btn-info" [routerLink]="['/roomdetails', room.key]" routerDirection="forward">View Rooms</button>
-       </div>
+        
+        <div class="room" *ngFor="let room of rooms;">
+          <div class="room-image"><img src="{{room.image}}" alt="room1" class="thumbnail">
+            <div class="details">
+              <div class="title">
+                  <h2>{{room.RoomType}}</h2>
+                  <p>R. {{room.Price}} p/m</p>
+              </div>
+                
+                <button type="button" class="btn btn-dark"  [routerLink]="['/roomdetails', room.key]" routerDirection="forward">View Rooms</button>
+      
+              </div>
+
+          </div>
+      
+      
+     </div>
+     
+</div>
+<div class="modal fade" id="addRoomModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+          
+            <form>
+              <label class="form-label">Room Type</label>
+
+            </form>
+        
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>

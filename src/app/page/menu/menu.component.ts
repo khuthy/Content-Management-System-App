@@ -13,12 +13,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  logout() {
-    firebase.auth().signOut().then(() => {
-      console.log('loggged out');
-      this.router.navigateByUrl('/');
-    })
-  }
+  
 
 
 }

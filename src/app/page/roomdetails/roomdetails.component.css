@@ -19,10 +19,17 @@
     margin-bottom: 2%;
   }
   .thumbnail {
-    max-height: 50%;
-    width: 20rem;
+   
+    width: 100%;
     object-fit: cover;
   }
   .article {
       padding: 3%;
+  }
+  .box {
+     
+      width: 20vh;
+      
+      border: 1px solid #ddd;
+
   }

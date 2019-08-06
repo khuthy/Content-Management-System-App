@@ -81,19 +81,7 @@
     border: none;
     position: relative;
   }
-  /* .far {
-    position: absolute;
-    top: 35.5%;
-    padding: 3px;
-    z-index: 1;
-    
-  } */
- /*  .material-icons {
-    position: absolute;
-    top: 46.5%;
-    padding: 3px;
-    z-index: 1; 
-  } */
+
   .form-group {
     margin-bottom: 2rem;
     text-align: center;

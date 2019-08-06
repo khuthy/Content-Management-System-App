@@ -8,10 +8,10 @@ export const FIREBASE_CONFIG = {
     appId: "1:489535594102:web:e487ba00e62a22e3"
   };
 
-  export const fetchData = snapshots => {
+  export const fetchData = snapshot => {
     let hotels = [];
 
-    snapshots.forEach(element => {
+    snapshot.forEach(element => {
         let item = element.val();
         item.key = element.key;
         hotels.push(item);
